@@ -1,68 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300&family=Montserrat:ital,wght@0,100;0,600;0,700;0,900;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 body{
     background-color: white;
-    align-items: center;
-    justify-content: center;
-    width:80vh ;
+    width:100vh ;
     height: 100vh;
-    border: 0.1px solid gray;
-    border-radius: 10px;
+    display:grid;
+    place-items: center;
+    margin:0 auto;
+    font-family: 'Montserrat', sans-serif;
 }
-.top{
-    background-color: rgb(95, 81, 175);
-    height: 30vh;
-    width: 70vh;
-    margin-bottom: 0;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    
-}
-.bottom{
-    background-color: white;
-    text-align: center;
-    width: 70vh;
-    height: 60vh;
-    border-radius: 20px;
-}
+/*content wrapper*/
 main{
-    display: grid;
-    grid-template-rows: auto auto;
-    margin: 40px;
-    width: 70vh;
+    width: 60vh;
     height: 90vh;
-    justify-content: center;
     position: relative;
     box-shadow: 5px 5px 5px 5px rgb(226, 219, 219);
     border-radius: 20px;
     font-size: 20px;
+    overflow: hidden;
 }
+.top{
+    background-color: rgb(95, 81, 175);
+    height: 40%;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.bottom{
+    background-color: white;
+    text-align: center;
+    width: 100%;
+    height: 70%;
+    border-radius: 0 0 20px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .bottom h3{
-    color: purple;
-   
+    color: rgb(93, 93, 93);
+    font-weight: 600;
+    font-size:25px;
+    margin-top:18px;
+}
+.bottom p{
+    font-weight:00;
+    font-size:16px;
+    margin-top:8px;
+    font-family: 'Raleway', sans-serif;
+    
 }
 h2{
-    margin-top: 120px;
+    margin-top: 190px;
+    font-weight: 700;
+    font-size:40px;
+    color: rgb(95, 81, 175);
+
 }
 
 button{
     width: 150px;
     background-color: rgb(95, 81, 175);
     height: 50px;
-    border-radius: 20px;
+    border-radius: 25px;
     color: white;
     font-size: large;
     margin-top: 20px ;
+    border:none;
 
 }
 img{
-    width: 150px;
-    height: 150px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    margin: auto;
-    margin-top: 160px;
-   
+    margin-bottom: -150px;
+    bottom:0;
+    background-size: cover;
+    border: 4px solid white; 
+}
+button:hover, button:focus{
+    background-color:rgb(255, 255, 255);
+    color:rgb(95, 81, 175);
+    border: 2px solid rgb(95, 81, 175);
+}
+.card-title{
+    position: relative;
+    width: max-content;
+
 }
